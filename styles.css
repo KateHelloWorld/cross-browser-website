@@ -1,0 +1,46 @@
+.explorer, 
+.edge,
+.firefox,
+.safari,
+.chrominum{
+    background-color: cornsilk;
+    border: solid, 1px black;
+    display: none;
+    margin: 20px;
+    padding: 5px;
+}
+
+/** Internet Explorer */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    div {
+    display: block;
+    }
+}
+    
+/** Microsoft Edge */
+@supports (-ms-ime-align: auto) {
+    div {
+    display: block;
+    }
+}
+    
+/** Mozilla Firefox */
+@-moz-document url-prefix() {
+    div {
+    display: block;
+    }
+}
+    
+/** Safari */
+@media not all and (min-resolution: 0.001dpcm) {
+    div{
+    display: block;
+    }
+}
+    
+/** Chrominum */
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+    div:not(*:root) {
+    display: block;
+    }
+}
