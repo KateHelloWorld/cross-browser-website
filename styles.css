@@ -45,7 +45,9 @@
     }
 }
 
-.box{
+.box-inline-flex,
+.box-flex{
+    background-color: black;
     height: 500px;
     display: inline-flex;
     width: 100%;
@@ -54,14 +56,27 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
+.box-inline-flex{
+    display: inline-flex;
+}
+.box-flex{
+    background-color: black;
+    margin-top: 20vh;
+    display: flex;
+}
 .item{
     height: 22vh;
     width: 46vw;
 }
 
-#i1{background-color: cornflowerblue;}
-#i2{background-color: rgb(225, 100, 237);}
-#i3{background-color: rgb(228, 237, 100);}
-#i4{background-color: rgb(100, 237, 159);}
-#i5{background-color: rgb(237, 100, 100);}
+h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1em;
+}
+
+#i1, #fi1{background-color: cornflowerblue;}
+#i2, #fi2{background-color: rgb(225, 100, 237);}
+#i3, #fi3{background-color: rgb(228, 237, 100);}
+#i4, #fi4{background-color: rgb(100, 237, 159);}
+#i5, #fi5{background-color: rgb(237, 100, 100);}
