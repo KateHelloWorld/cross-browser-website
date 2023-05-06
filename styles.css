@@ -13,28 +13,28 @@
 /** Internet Explorer */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .explorer {
-    display: block;
+        display: block;
     }
 }
     
 /** Microsoft Edge */
 @supports (-ms-ime-align: auto) {
     .edge {
-    display: block;
+        display: block;
     }
 }
     
 /** Mozilla Firefox */
 @-moz-document url-prefix() {
     .firefox {
-    display: block;
+        display: block;
     }
 }
     
 /** Safari */
 @media not all and (min-resolution: 0.001dpcm) {
     .safari{
-    display: block;
+        display: block;
     }
 }
     
@@ -44,3 +44,24 @@
     display: block;
     }
 }
+
+.box{
+    height: 500px;
+    display: inline-flex;
+    width: 100%;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.item{
+    height: 22vh;
+    width: 46vw;
+}
+
+#i1{background-color: cornflowerblue;}
+#i2{background-color: rgb(225, 100, 237);}
+#i3{background-color: rgb(228, 237, 100);}
+#i4{background-color: rgb(100, 237, 159);}
+#i5{background-color: rgb(237, 100, 100);}
